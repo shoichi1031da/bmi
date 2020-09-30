@@ -9,11 +9,13 @@
     <textarea id="output"></textarea><br>
     
         <script type="module">
-        var url = performance.navigation.type;
-        if(url === 1 || url === 0 || url === 255){
-            console.log(url);
-            alert(url);
+        var connect = new WebSocket('wss://api.sakura.io/ws/v1/8c525242-55ca-4bf6-bd90-d172a4957720');
+        if(connect){
+            console.log("Access!!");
+            alert("Accsess!!");
         }
+            
+         
          
         import { print } from "https://js.sabae.cc/";
         
