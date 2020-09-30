@@ -9,8 +9,8 @@
     <textarea id="output"></textarea><br>
     
         <script type="module">
-        //var params = new URL(document.location);
-        if(performance.navigation.type === 1){
+        var url = performance.navigation.type;
+        if(url === 1 || url === 0 || url === 255){
             console.log("Access!!");
             alert("Access!!");
         }
